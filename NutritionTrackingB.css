@@ -1,0 +1,83 @@
+.personalize-section {
+  padding: 25px 0px 20px 0px;
+  background-color: #f0dd98;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 60vh;
+}
+
+.chart-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2vh;
+}
+.chart-meal-type {
+  font-size: 20px;
+  font-weight: bold;
+}
+.chart-calorie-left {
+  font-size: 15px;
+  color: #8c8c8c;
+  font-weight: bold;
+}
+.chef-picture {
+  max-width: 371px;
+  position: absolute;
+  left: 350px;
+  transform: translateY(-120px);
+}
+
+.warning-section {
+  padding: 20px 0px 20px 0px;
+  background-color: #f0dd98;
+}
+@media (max-width: 768px) {
+  .chart-container {
+    flex-direction: column;
+    justify-content: right;
+  }
+
+  .chef-picture {
+    width: 100%;
+    margin-left: 0vh;
+    position: static;
+    transform: none;
+  }
+
+  .chart-description {
+    text-align: left;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 450px) {
+  .chart-container {
+    flex-direction: column;
+    align-items: right;
+    margin-left: 10vh;
+    margin-right: 5vh;
+  }
+
+  .chef-picture {
+    max-width: 0%;
+    position: static;
+    transform: none;
+    margin-top: 4vh;
+  }
+
+  .chart-description {
+    text-align: left;
+    margin-left: 1vh;
+  }
+}
